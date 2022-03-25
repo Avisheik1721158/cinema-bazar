@@ -1,0 +1,74 @@
+[
+    {
+        "id": "623e0e451963492f2a867588",
+        "image": "https://cdn.bollywoodmdb.com/movies/largethumb/2019/k-g-f-chapter-2/k-g-f-chapter-2-poster-11.jpg",
+        "price": 39,
+        "name": "KGF2"
+    },
+    {
+        "id": "623e0e457222c4786a9ea700",
+        "image": "https://www.indiewire.com/wp-content/uploads/2019/12/beach_bum.jpg?w=510",
+        "price": 33,
+        "name": "The Beach Bum"
+    },
+    {
+        "id": "623e0e45db86c779f35b32b4",
+        "image": "https://m.media-amazon.com/images/I/91whPdOjr7L._SL1500_.jpg",
+        "price": 25,
+        "name": "Back to the Future"
+    },
+    {
+        "id": "623e0e458dcf5e2f4349ad49",
+        "image": "https://pbs.twimg.com/media/ESSAbalWkAAxYRr?format=jpg&name=medium",
+        "price": 22,
+        "name": "চলো পাল্টাই"
+    },
+    {
+        "id": "623e0e451564312cd8d9e3aj",
+        "image": "https://images.thedailystar.net/sites/default/files/styles/very_big_1/public/news/images/ghuddi_0.jpg?itok=OUpZIJWR",
+        "price": 23,
+        "name": "ঘুড্ডি"
+    },
+    {
+        "id": "623e0e451564312cd8d9e3ae",
+        "image": "https://dailyasianage.com/library/1588879139_6.jpg",
+        "price": 23,
+        "name": "আয়নাবাজি"
+    },
+    {
+        "id": "623e0e451564312cd8d9e3ab",
+        "image": "https://1.bp.blogspot.com/-VxCRoEwG6kE/XzLKaMJkbkI/AAAAAAABPXw/WXm31JhSgd0kpbT3DbzjWz_5cfnfCNZjACNcBGAsYHQ/s886/season%2B6.jpg",
+        "price": 23,
+        "name": "Supergirl"
+    },
+    {
+        "id": "623e0e451564312cd8d9e3ac",
+        "image": "https://www.themoviedb.org/t/p/original/wnY6JOTqQudpw5zA3JaHVPYCl75.jpg",
+        "price": 23,
+        "name": "Harry Potter"
+    },
+    {
+        "id": "623e0e451564312cd8d9e3ad",
+        "image": "https://lionsgate.brightspotcdn.com/cc/c7/2e701ac14a22a2e3d81e292b3c80/john-wick-chapter-2-movies-poster-01.jpg",
+        "price": 23,
+        "name": "John wick 2"
+    },
+    {
+        "id": "623e0e451564312cd8d9e3af",
+        "image": "https://i.pinimg.com/564x/ec/54/88/ec5488d54bbe54fc90363acf8012fcca.jpg",
+        "price": 23,
+        "name": "Ratsasan"
+    },
+    {
+        "id": "623e0e451564312cd8d9e3ag",
+        "image": "https://wallpaperaccess.com/full/3640120.jpg",
+        "price": 23,
+        "name": "La Casa De Papel"
+    },
+    {
+        "id": "623e0e451564312cd8d9e3ah",
+        "image": "https://i.pinimg.com/564x/5f/32/11/5f32110b9780dbec30c4bf35a3c6795f.jpg",
+        "price": 23,
+        "name": "The Last Of US Part ||"
+    }
+]

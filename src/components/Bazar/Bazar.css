@@ -1,0 +1,12 @@
+.ui-container{
+    display: grid;
+    /* separate area */
+    grid-template-columns: 4fr 1fr;
+
+}
+.movies-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin: 100px 50px
+}
