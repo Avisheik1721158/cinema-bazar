@@ -51,7 +51,15 @@ const Bazar = () => {
     const handleButton = (movie) => {
         const newCart = [...cart, movie]
         setCart(newCart);
+
     }
+    const clearButton = () => {
+        setCart([]);
+    }
+    // const chooseOne = () => {
+    //     const number = Math.floor(Math.random() * (12 - 1)) + 1
+    //     setCart([number])
+    // }
 
     return (
         <div className='ui-container'>
@@ -68,7 +76,11 @@ const Bazar = () => {
 
             </div>
             <div className='cart-container'>
-                <Cart cart={cart}></Cart>
+                <Cart
+                    cart={cart}
+                    clearButton={clearButton}
+                // chooseOne={chooseOne}
+                ></Cart>
             </div>
         </div>
     );

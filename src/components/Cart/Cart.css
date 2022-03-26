@@ -1,0 +1,32 @@
+.cart{
+    position: sticky;
+    top: 0;
+    background-color: bisque;
+    text-align: center;
+
+}
+.cart-text{
+    text-align: center;
+}
+.btn-selected{
+    width: 70%;
+    display: flex;
+  
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    background-color: darkorange;
+}
+.btn-selected-again{
+    width: 70%;
+    display: flex;
+    margin-top: 50px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    background-color:rgb(55, 190, 190);
+
+}
+
