@@ -1,4 +1,17 @@
-.img{
+.movie{
+    border: 1px solid bisque;
+    width: 350px;
+    
+}
+.movie img{
     width: 350px;
     height: 420px
+}
+.btn-cart{
+    width: 100%;
+    background-color:darksalmon  ;
+
+}
+.btn-cart:hover{
+    background-color: rgb(59, 187, 59);
 }

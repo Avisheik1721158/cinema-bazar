@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Movie from '../Movie/Movie';
 import './Bazar.css'
 
-
+// Json data Fetch
+// cart attached
 const Bazar = () => {
     const [movies, setMovies] = useState([]);
+    const [cart, setCart] = useState([])
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -44,21 +46,29 @@ const Bazar = () => {
     //     }
     // ]
 
+    //    even handle declare
+    const handleButton = (movie) => {
+        const newCart = [...cart, movie]
+        setCart(newCart);
+    }
 
     return (
         <div className='ui-container'>
             <div className='movies-container'>
+                {/* props declared */}
 
                 {
                     movies.map(movie => <Movie
                         key={movie.id}
-                        movie={movie}>
+                        movie={movie}
+                        handleButton={handleButton}>
                     </Movie>)
                 }
 
             </div>
             <div className='cart-container'>
-                <h4>Order Summary</h4>
+                <h4>Selected Movie</h4>
+                <p>{cart.length}</p>
             </div>
         </div>
     );

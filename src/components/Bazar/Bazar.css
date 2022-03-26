@@ -10,3 +10,9 @@
     gap: 45px;
     margin: 100px 50px
 }
+@media screen and (max-width:768px) {
+    .movies-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
