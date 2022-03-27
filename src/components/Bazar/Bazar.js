@@ -15,6 +15,8 @@ const Bazar = () => {
             .then(data => setMovies(data))
 
     }, [])
+
+
     // const movies = [
     //     {
     //         "id": "623e0e451963492f2a867588",
@@ -48,6 +50,8 @@ const Bazar = () => {
     //     }
     // ]
 
+
+
     //    even handle declare
     const handleButton = (movie) => {
         const newCart = [...cart, movie]
@@ -60,13 +64,14 @@ const Bazar = () => {
     }
     const clearButton = () => {
         setCart([]);
+        setChooseOne([])
     }
     const randomChoose = () => {
         // const number = Math.floor(Math.random() * (12 - 1)) + 1
         const number = cart[Math.floor(Math.random() * cart.length)];
         setChooseOne([number])
         setCart([])
-        console.log(setChooseOne[number])
+
     }
 
     return (

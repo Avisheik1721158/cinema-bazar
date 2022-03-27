@@ -11,8 +11,17 @@
     margin: 100px 50px
 }
 @media screen and (max-width:768px) {
-    .movies-container{
+    .movies-container  {
         grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .ui-container  {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 45px;
+    margin: 100px 50px
     }
     
 }

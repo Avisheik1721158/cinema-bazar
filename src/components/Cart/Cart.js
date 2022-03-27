@@ -1,4 +1,6 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Cart.css'
 
 const Cart = ({ cart, clearButton, chooseOne, randomChoose }) => {
@@ -9,7 +11,11 @@ const Cart = ({ cart, clearButton, chooseOne, randomChoose }) => {
     // }
 
     // console.log(cart.length)
+    if (cart.length > 4) {
+        toast('Please select 4 movies')
+        clearButton()
 
+    }
 
 
     return (
@@ -18,17 +24,20 @@ const Cart = ({ cart, clearButton, chooseOne, randomChoose }) => {
             <div>
                 {
                     cart.map((carts) => {
-                        // if (cart.length > 4) {
-                        //     alert('Please select 4 movies')
-                        //  
-                        // } 
+
+
+
 
 
                         return (
 
                             <div className='cart-text' key={carts.id}>
+
+
+
+                                <p><img className='img' src={carts.image} alt="" /></p>
                                 {/* key={carts.id} */}
-                                {carts.name} {' '}
+                                <h3>   {carts.name} </h3> {' '}
                                 <p>
                                     price:$ {carts.price}
                                 </p>
@@ -48,7 +57,8 @@ const Cart = ({ cart, clearButton, chooseOne, randomChoose }) => {
 
                                 <div className='cart-text' key={items.id}>
                                     {/* key={carts.id} */}
-                                    {items.name} {' '}
+                                    <p><img className='img' src={items.image} alt="" /></p>
+                                    <h3> {items.name}</h3> {' '}
                                     <p>
                                         price:$ {items.price}
                                     </p>
