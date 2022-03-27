@@ -7,7 +7,8 @@ import './Bazar.css'
 // cart attached
 const Bazar = () => {
     const [movies, setMovies] = useState([]);
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([]);
+    const [chooseOne, setChooseOne] = useState([])
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -50,16 +51,23 @@ const Bazar = () => {
     //    even handle declare
     const handleButton = (movie) => {
         const newCart = [...cart, movie]
+        // console.log(movie)
         setCart(newCart);
+        // console.log(newCart[0].name)
+
+
 
     }
     const clearButton = () => {
         setCart([]);
     }
-    // const chooseOne = () => {
-    //     const number = Math.floor(Math.random() * (12 - 1)) + 1
-    //     setCart([number])
-    // }
+    const randomChoose = () => {
+        // const number = Math.floor(Math.random() * (12 - 1)) + 1
+        const number = cart[Math.floor(Math.random() * cart.length)];
+        setChooseOne([number])
+        setCart([])
+        console.log(setChooseOne[number])
+    }
 
     return (
         <div className='ui-container'>
@@ -79,7 +87,8 @@ const Bazar = () => {
                 <Cart
                     cart={cart}
                     clearButton={clearButton}
-                // chooseOne={chooseOne}
+                    chooseOne={chooseOne}
+                    randomChoose={randomChoose}
                 ></Cart>
             </div>
         </div>
